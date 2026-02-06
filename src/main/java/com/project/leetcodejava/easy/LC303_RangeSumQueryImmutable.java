@@ -24,12 +24,11 @@ import lombok.extern.slf4j.Slf4j;
  *   • один запрос суммы диапазона: O(1)
  *   • дополнительная память: O(n)
  */
-@Slf4j
-public class LC303_Range_Sum_Query_Immutable {
+public class LC303_RangeSumQueryImmutable {
 
     private final int[] prefix;
 
-    public LC303_Range_Sum_Query_Immutable(int[] nums) {
+    public LC303_RangeSumQueryImmutable(int[] nums) {
         if (nums == null || nums.length == 0) {
             throw new IllegalArgumentException();
         }

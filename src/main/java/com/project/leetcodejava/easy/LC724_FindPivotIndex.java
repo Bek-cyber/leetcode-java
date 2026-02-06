@@ -25,11 +25,10 @@ import lombok.extern.slf4j.Slf4j;
  *   • время: O(n)
  *   • дополнительная память: O(1)
  */
-@Slf4j
 public class LC724_FindPivotIndex {
     public int pivotIndex(int[] nums) {
         if (nums == null || nums.length ==0) {
-            return -1;
+            throw new IllegalArgumentException();
         }
 
         int totalSum = 0;

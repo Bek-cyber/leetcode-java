@@ -29,7 +29,7 @@ package com.project.leetcodejava.easy;
 public class LC1422_MaximumScoreAfterSplittingAString {
     public int maxScore(String s) {
         if (s == null || s.length() < 2) {
-            return 0;
+            throw new IllegalArgumentException();
         }
 
         int totalOnes = 0;

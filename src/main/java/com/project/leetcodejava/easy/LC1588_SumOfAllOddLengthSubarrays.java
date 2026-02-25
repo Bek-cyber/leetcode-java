@@ -32,8 +32,7 @@ public class LC1588_SumOfAllOddLengthSubarrays {
 
     public int sumOddLengthSubarrays(int[] arr) {
         if (arr == null || arr.length == 0) {
-            log.warn("Передан null или пустой массив. Сумма равна 0.");
-            return 0;
+            throw new IllegalArgumentException("Передан null или пустой массив. Сумма равна 0.");
         }
 
         int n = arr.length;
